@@ -1,0 +1,6 @@
+framework module Pods_OtusRxProject_OtusRxProjectUITests {
+  umbrella header "Pods-OtusRxProject-OtusRxProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		383A47B0FD17E848D0629C33 /* Pods_OtusRxProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A58DE6D6EBCBB417592641 /* Pods_OtusRxProjectTests.framework */; };
+		764D0FBEF240AB5C48B3C421 /* Pods_OtusRxProject_OtusRxProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C28DADBF798F660BA07223C /* Pods_OtusRxProject_OtusRxProjectUITests.framework */; };
+		9772ABF0236F60F6009047AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772ABEF236F60F6009047AD /* AppDelegate.swift */; };
+		9772ABF2236F60F6009047AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772ABF1236F60F6009047AD /* SceneDelegate.swift */; };
+		9772ABF7236F60F6009047AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9772ABF5236F60F6009047AD /* Main.storyboard */; };
+		9772ABF9236F60F8009047AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9772ABF8236F60F8009047AD /* Assets.xcassets */; };
+		9772ABFC236F60F8009047AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9772ABFA236F60F8009047AD /* LaunchScreen.storyboard */; };
+		9772AC07236F60F8009047AD /* OtusRxProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772AC06236F60F8009047AD /* OtusRxProjectTests.swift */; };
+		9772AC12236F60F8009047AD /* OtusRxProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772AC11236F60F8009047AD /* OtusRxProjectUITests.swift */; };
+		978BAEAA2370A982005437F4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BAEA92370A982005437F4 /* SearchViewController.swift */; };
+		E80CF07FC99C8F78FD0ADC59 /* Pods_OtusRxProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E16656745C7293F032C49E8 /* Pods_OtusRxProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9772AC03236F60F8009047AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9772ABE4236F60F6009047AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9772ABEB236F60F6009047AD;
+			remoteInfo = OtusRxProject;
+		};
+		9772AC0E236F60F8009047AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9772ABE4236F60F6009047AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9772ABEB236F60F6009047AD;
+			remoteInfo = OtusRxProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17D5B0661FE0D9E3D683281C /* Pods-OtusRxProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProject.debug.xcconfig"; path = "Target Support Files/Pods-OtusRxProject/Pods-OtusRxProject.debug.xcconfig"; sourceTree = "<group>"; };
+		28A0FEDC3870D827D3447221 /* Pods-OtusRxProject-OtusRxProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProject-OtusRxProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-OtusRxProject-OtusRxProjectUITests/Pods-OtusRxProject-OtusRxProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2E16656745C7293F032C49E8 /* Pods_OtusRxProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtusRxProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E376D531397E2A573CE6C6 /* Pods-OtusRxProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C28DADBF798F660BA07223C /* Pods_OtusRxProject_OtusRxProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtusRxProject_OtusRxProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8151FC98655EF12A8CF5F546 /* Pods-OtusRxProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProjectTests.release.xcconfig"; path = "Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		9772ABEC236F60F6009047AD /* OtusRxProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusRxProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9772ABEF236F60F6009047AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9772ABF1236F60F6009047AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9772ABF6236F60F6009047AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9772ABF8236F60F8009047AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9772ABFB236F60F8009047AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9772ABFD236F60F8009047AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9772AC02236F60F8009047AD /* OtusRxProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtusRxProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9772AC06236F60F8009047AD /* OtusRxProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusRxProjectTests.swift; sourceTree = "<group>"; };
+		9772AC08236F60F8009047AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9772AC0D236F60F8009047AD /* OtusRxProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtusRxProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9772AC11236F60F8009047AD /* OtusRxProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusRxProjectUITests.swift; sourceTree = "<group>"; };
+		9772AC13236F60F8009047AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		978BAEA92370A982005437F4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A1A58DE6D6EBCBB417592641 /* Pods_OtusRxProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtusRxProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1474D70408750590313F3AE /* Pods-OtusRxProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProject.release.xcconfig"; path = "Target Support Files/Pods-OtusRxProject/Pods-OtusRxProject.release.xcconfig"; sourceTree = "<group>"; };
+		B7C3EE7E33D47A774B8CFDD0 /* Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OtusRxProject-OtusRxProjectUITests/Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9772ABE9236F60F6009047AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80CF07FC99C8F78FD0ADC59 /* Pods_OtusRxProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9772ABFF236F60F8009047AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383A47B0FD17E848D0629C33 /* Pods_OtusRxProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9772AC0A236F60F8009047AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764D0FBEF240AB5C48B3C421 /* Pods_OtusRxProject_OtusRxProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9772ABE3236F60F6009047AD = {
+			isa = PBXGroup;
+			children = (
+				9772ABEE236F60F6009047AD /* OtusRxProject */,
+				9772AC05236F60F8009047AD /* OtusRxProjectTests */,
+				9772AC10236F60F8009047AD /* OtusRxProjectUITests */,
+				9772ABED236F60F6009047AD /* Products */,
+				F4CF8E6E474CFDD201DDBA05 /* Pods */,
+				F3C6EAEB4CCF6E03E4A22246 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9772ABED236F60F6009047AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9772ABEC236F60F6009047AD /* OtusRxProject.app */,
+				9772AC02236F60F8009047AD /* OtusRxProjectTests.xctest */,
+				9772AC0D236F60F8009047AD /* OtusRxProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9772ABEE236F60F6009047AD /* OtusRxProject */ = {
+			isa = PBXGroup;
+			children = (
+				9772ABEF236F60F6009047AD /* AppDelegate.swift */,
+				9772ABF1236F60F6009047AD /* SceneDelegate.swift */,
+				9772ABF5236F60F6009047AD /* Main.storyboard */,
+				9772ABF8236F60F8009047AD /* Assets.xcassets */,
+				9772ABFA236F60F8009047AD /* LaunchScreen.storyboard */,
+				9772ABFD236F60F8009047AD /* Info.plist */,
+				978BAEA92370A982005437F4 /* SearchViewController.swift */,
+			);
+			path = OtusRxProject;
+			sourceTree = "<group>";
+		};
+		9772AC05236F60F8009047AD /* OtusRxProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				9772AC06236F60F8009047AD /* OtusRxProjectTests.swift */,
+				9772AC08236F60F8009047AD /* Info.plist */,
+			);
+			path = OtusRxProjectTests;
+			sourceTree = "<group>";
+		};
+		9772AC10236F60F8009047AD /* OtusRxProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9772AC11236F60F8009047AD /* OtusRxProjectUITests.swift */,
+				9772AC13236F60F8009047AD /* Info.plist */,
+			);
+			path = OtusRxProjectUITests;
+			sourceTree = "<group>";
+		};
+		F3C6EAEB4CCF6E03E4A22246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E16656745C7293F032C49E8 /* Pods_OtusRxProject.framework */,
+				7C28DADBF798F660BA07223C /* Pods_OtusRxProject_OtusRxProjectUITests.framework */,
+				A1A58DE6D6EBCBB417592641 /* Pods_OtusRxProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4CF8E6E474CFDD201DDBA05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17D5B0661FE0D9E3D683281C /* Pods-OtusRxProject.debug.xcconfig */,
+				B1474D70408750590313F3AE /* Pods-OtusRxProject.release.xcconfig */,
+				B7C3EE7E33D47A774B8CFDD0 /* Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig */,
+				28A0FEDC3870D827D3447221 /* Pods-OtusRxProject-OtusRxProjectUITests.release.xcconfig */,
+				67E376D531397E2A573CE6C6 /* Pods-OtusRxProjectTests.debug.xcconfig */,
+				8151FC98655EF12A8CF5F546 /* Pods-OtusRxProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9772ABEB236F60F6009047AD /* OtusRxProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9772AC16236F60F8009047AD /* Build configuration list for PBXNativeTarget "OtusRxProject" */;
+			buildPhases = (
+				5F779EEFC19106B9B830C350 /* [CP] Check Pods Manifest.lock */,
+				9772ABE8236F60F6009047AD /* Sources */,
+				9772ABE9236F60F6009047AD /* Frameworks */,
+				9772ABEA236F60F6009047AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OtusRxProject;
+			productName = OtusRxProject;
+			productReference = 9772ABEC236F60F6009047AD /* OtusRxProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9772AC01236F60F8009047AD /* OtusRxProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9772AC19236F60F8009047AD /* Build configuration list for PBXNativeTarget "OtusRxProjectTests" */;
+			buildPhases = (
+				ACAF09AF45879EA843A31FAF /* [CP] Check Pods Manifest.lock */,
+				9772ABFE236F60F8009047AD /* Sources */,
+				9772ABFF236F60F8009047AD /* Frameworks */,
+				9772AC00236F60F8009047AD /* Resources */,
+				66A8EE555EAF03DA2036CD72 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9772AC04236F60F8009047AD /* PBXTargetDependency */,
+			);
+			name = OtusRxProjectTests;
+			productName = OtusRxProjectTests;
+			productReference = 9772AC02236F60F8009047AD /* OtusRxProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9772AC0C236F60F8009047AD /* OtusRxProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9772AC1C236F60F8009047AD /* Build configuration list for PBXNativeTarget "OtusRxProjectUITests" */;
+			buildPhases = (
+				F39196F4703926684CBCE96E /* [CP] Check Pods Manifest.lock */,
+				9772AC09236F60F8009047AD /* Sources */,
+				9772AC0A236F60F8009047AD /* Frameworks */,
+				9772AC0B236F60F8009047AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9772AC0F236F60F8009047AD /* PBXTargetDependency */,
+			);
+			name = OtusRxProjectUITests;
+			productName = OtusRxProjectUITests;
+			productReference = 9772AC0D236F60F8009047AD /* OtusRxProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9772ABE4236F60F6009047AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Murzin Mikhail";
+				TargetAttributes = {
+					9772ABEB236F60F6009047AD = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					9772AC01236F60F8009047AD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9772ABEB236F60F6009047AD;
+					};
+					9772AC0C236F60F8009047AD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9772ABEB236F60F6009047AD;
+					};
+				};
+			};
+			buildConfigurationList = 9772ABE7236F60F6009047AD /* Build configuration list for PBXProject "OtusRxProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9772ABE3236F60F6009047AD;
+			productRefGroup = 9772ABED236F60F6009047AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9772ABEB236F60F6009047AD /* OtusRxProject */,
+				9772AC01236F60F8009047AD /* OtusRxProjectTests */,
+				9772AC0C236F60F8009047AD /* OtusRxProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9772ABEA236F60F6009047AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9772ABFC236F60F8009047AD /* LaunchScreen.storyboard in Resources */,
+				9772ABF9236F60F8009047AD /* Assets.xcassets in Resources */,
+				9772ABF7236F60F6009047AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9772AC00236F60F8009047AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9772AC0B236F60F8009047AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F779EEFC19106B9B830C350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OtusRxProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66A8EE555EAF03DA2036CD72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACAF09AF45879EA843A31FAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OtusRxProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F39196F4703926684CBCE96E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OtusRxProject-OtusRxProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9772ABE8236F60F6009047AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978BAEAA2370A982005437F4 /* SearchViewController.swift in Sources */,
+				9772ABF0236F60F6009047AD /* AppDelegate.swift in Sources */,
+				9772ABF2236F60F6009047AD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9772ABFE236F60F8009047AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9772AC07236F60F8009047AD /* OtusRxProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9772AC09236F60F8009047AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9772AC12236F60F8009047AD /* OtusRxProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9772AC04236F60F8009047AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9772ABEB236F60F6009047AD /* OtusRxProject */;
+			targetProxy = 9772AC03236F60F8009047AD /* PBXContainerItemProxy */;
+		};
+		9772AC0F236F60F8009047AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9772ABEB236F60F6009047AD /* OtusRxProject */;
+			targetProxy = 9772AC0E236F60F8009047AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9772ABF5236F60F6009047AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9772ABF6236F60F6009047AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9772ABFA236F60F8009047AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9772ABFB236F60F8009047AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9772AC14236F60F8009047AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9772AC15236F60F8009047AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9772AC17236F60F8009047AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17D5B0661FE0D9E3D683281C /* Pods-OtusRxProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OtusRxProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mmurzin.OtusRxProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9772AC18236F60F8009047AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1474D70408750590313F3AE /* Pods-OtusRxProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OtusRxProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mmurzin.OtusRxProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9772AC1A236F60F8009047AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E376D531397E2A573CE6C6 /* Pods-OtusRxProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OtusRxProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mmurzin.OtusRxProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtusRxProject.app/OtusRxProject";
+			};
+			name = Debug;
+		};
+		9772AC1B236F60F8009047AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8151FC98655EF12A8CF5F546 /* Pods-OtusRxProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OtusRxProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mmurzin.OtusRxProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtusRxProject.app/OtusRxProject";
+			};
+			name = Release;
+		};
+		9772AC1D236F60F8009047AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C3EE7E33D47A774B8CFDD0 /* Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OtusRxProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mmurzin.OtusRxProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OtusRxProject;
+			};
+			name = Debug;
+		};
+		9772AC1E236F60F8009047AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A0FEDC3870D827D3447221 /* Pods-OtusRxProject-OtusRxProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OtusRxProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mmurzin.OtusRxProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OtusRxProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9772ABE7236F60F6009047AD /* Build configuration list for PBXProject "OtusRxProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9772AC14236F60F8009047AD /* Debug */,
+				9772AC15236F60F8009047AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9772AC16236F60F8009047AD /* Build configuration list for PBXNativeTarget "OtusRxProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9772AC17236F60F8009047AD /* Debug */,
+				9772AC18236F60F8009047AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9772AC19236F60F8009047AD /* Build configuration list for PBXNativeTarget "OtusRxProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9772AC1A236F60F8009047AD /* Debug */,
+				9772AC1B236F60F8009047AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9772AC1C236F60F8009047AD /* Build configuration list for PBXNativeTarget "OtusRxProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9772AC1D236F60F8009047AD /* Debug */,
+				9772AC1E236F60F8009047AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9772ABE4236F60F6009047AD /* Project object */;
+}
