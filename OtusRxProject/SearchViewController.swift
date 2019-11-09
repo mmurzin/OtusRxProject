@@ -54,6 +54,12 @@ class SearchViewController: UIViewController, UITableViewDelegate {
         .subscribe(onNext:  { indexPath in
             let movie = self.movies[indexPath.row]
             print("Tapped id = \(movie.id)")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(identifier: "DetailViewController")
+            if viewController is DetailViewController {
+                (viewController as! DetailViewController).movieId = movie.id
+            }
+            self.navigationController?.pushViewController(viewController, animated: true)
         })
         .disposed(by: disposeBag)
     }

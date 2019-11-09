@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		383A47B0FD17E848D0629C33 /* Pods_OtusRxProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A58DE6D6EBCBB417592641 /* Pods_OtusRxProjectTests.framework */; };
 		764D0FBEF240AB5C48B3C421 /* Pods_OtusRxProject_OtusRxProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C28DADBF798F660BA07223C /* Pods_OtusRxProject_OtusRxProjectUITests.framework */; };
+		9750A4702376EB1B0082695B /* DetailMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750A46F2376EB1B0082695B /* DetailMovie.swift */; };
+		9750A4722376F0590082695B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750A4712376F0590082695B /* DetailViewController.swift */; };
 		9772ABF0236F60F6009047AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772ABEF236F60F6009047AD /* AppDelegate.swift */; };
 		9772ABF2236F60F6009047AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772ABF1236F60F6009047AD /* SceneDelegate.swift */; };
 		9772ABF7236F60F6009047AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9772ABF5236F60F6009047AD /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		67E376D531397E2A573CE6C6 /* Pods-OtusRxProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C28DADBF798F660BA07223C /* Pods_OtusRxProject_OtusRxProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtusRxProject_OtusRxProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8151FC98655EF12A8CF5F546 /* Pods-OtusRxProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProjectTests.release.xcconfig"; path = "Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		9750A46F2376EB1B0082695B /* DetailMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovie.swift; sourceTree = "<group>"; };
+		9750A4712376F0590082695B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9772ABEC236F60F6009047AD /* OtusRxProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusRxProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9772ABEF236F60F6009047AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9772ABF1236F60F6009047AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				978BAEAD2370B44C005437F4 /* TheMovieDbService.swift */,
 				97FBB63A2372145100EDC89B /* SearchResponse.swift */,
 				97FBB63C237214C500EDC89B /* Movie.swift */,
+				9750A46F2376EB1B0082695B /* DetailMovie.swift */,
+				9750A4712376F0590082695B /* DetailViewController.swift */,
 			);
 			path = OtusRxProject;
 			sourceTree = "<group>";
@@ -419,8 +425,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9750A4722376F0590082695B /* DetailViewController.swift in Sources */,
 				97FBB63D237214C500EDC89B /* Movie.swift in Sources */,
 				978BAEAA2370A982005437F4 /* SearchViewController.swift in Sources */,
+				9750A4702376EB1B0082695B /* DetailMovie.swift in Sources */,
 				9772ABF0236F60F6009047AD /* AppDelegate.swift in Sources */,
 				97FBB63B2372145100EDC89B /* SearchResponse.swift in Sources */,
 				978BAEAC2370B184005437F4 /* TheMovieDbEndpoint.swift in Sources */,

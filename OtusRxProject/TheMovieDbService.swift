@@ -26,4 +26,22 @@ class TheMovieDbService {
             }
         }.resume()
     }
+    
+    func getMovieDetail(_ id: Int, completion: @escaping (DetailMovie?, Error?) -> ()) {
+        let url = TheMovieDbEndpoint.detail(id).url
+        print(url)
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else {
+                return
+            }
+            print(data)
+            do {
+                let detailMovieResult = try JSONDecoder().decode(DetailMovie.self, from: data)
+                completion(detailMovieResult, nil)
+            } catch {
+                print("error")
+                completion(nil, error)
+            }
+        }.resume()
+    }
 }

@@ -13,17 +13,28 @@ enum TheMovieDbEndpoint {
     private static let API_KEY = "9329692b141f3570a525b0207ffbc757"
 
     case search(_ q: String)
+    case detail(_ id: Int)
 
     var url: URL {
         switch self {
-        case .search(let q):
-            let queryItems = [
-                NSURLQueryItem(name: "api_key", value: TheMovieDbEndpoint.API_KEY),
-                NSURLQueryItem(name: "language", value: "en"),
-                NSURLQueryItem(name: "query", value: q)]
-            let urlComps = NSURLComponents(string: "\(TheMovieDbEndpoint.base)/search/movie")!
-            urlComps.queryItems = queryItems as [URLQueryItem]
-            return urlComps.url!
+            case .search(let q):
+                let queryItems = [
+                    NSURLQueryItem(name: "api_key", value: TheMovieDbEndpoint.API_KEY),
+                    NSURLQueryItem(name: "language", value: "en"),
+                    NSURLQueryItem(name: "query", value: q)]
+                let urlComps = NSURLComponents(string: "\(TheMovieDbEndpoint.base)/search/movie")!
+                urlComps.queryItems = queryItems as [URLQueryItem]
+                return urlComps.url!
+            case .detail(let id):
+                let queryItems = [
+                    NSURLQueryItem(name: "api_key", value: TheMovieDbEndpoint.API_KEY),
+                    NSURLQueryItem(name: "language", value: "en")
+                ]
+                let urlComps = NSURLComponents(string: "\(TheMovieDbEndpoint.base)/movie/\(id)")!
+                urlComps.queryItems = queryItems as [URLQueryItem]
+                return urlComps.url!
         }
     }
+        
 }
+

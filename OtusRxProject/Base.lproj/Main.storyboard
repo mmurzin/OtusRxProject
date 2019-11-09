@@ -92,6 +92,58 @@
             </objects>
             <point key="canvasLocation" x="2886.9565217391305" y="25.446428571428569"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="a5O-mX-yF4">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uuS-g9-pcB" customClass="DetailViewController" customModule="OtusRxProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bll-sA-83Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ezi-6v-v34">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kah-2q-Z2f">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2v-Gc-xMN">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="84B-Dh-rKG">
+                                        <rect key="frame" x="0.0" y="100" width="374" height="718"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ezi-6v-v34" firstAttribute="trailing" secondItem="Bll-sA-83Q" secondAttribute="trailingMargin" id="0Ph-fi-l27"/>
+                            <constraint firstItem="Ezi-6v-v34" firstAttribute="top" secondItem="gTx-Uk-yzZ" secondAttribute="top" id="BbM-oI-HSW"/>
+                            <constraint firstItem="Ezi-6v-v34" firstAttribute="bottom" secondItem="gTx-Uk-yzZ" secondAttribute="bottom" id="Dmj-0E-hDS"/>
+                            <constraint firstItem="Ezi-6v-v34" firstAttribute="leading" secondItem="Bll-sA-83Q" secondAttribute="leadingMargin" id="oCR-2Y-8Wn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gTx-Uk-yzZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="84B-Dh-rKG" id="xIb-MB-sRj"/>
+                        <outlet property="tagLineLabel" destination="D2v-Gc-xMN" id="kkf-v7-QIb"/>
+                        <outlet property="titleLabel" destination="kah-2q-Z2f" id="Svv-Hl-BlE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wca-k4-hCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3989.8550724637685" y="18.75"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="T2U-TM-8sv">
             <objects>

@@ -1,27 +1,29 @@
 //
-//  Movie.swift
+//  DetailMovie.swift
 //  OtusRxProject
 //
-//  Created by Murzin Mikhail on 05.11.2019.
+//  Created by Murzin Mikhail on 09.11.2019.
 //  Copyright © 2019 Murzin Mikhail. All rights reserved.
 //
 
 import Foundation
 
-struct Movie: Decodable {
+
+struct DetailMovie: Decodable {
     let title: String
-    let vote: Double
-    let id: Int
+    let tagLine: String
+    let overview: String
+    
     enum Keys: String, CodingKey {
         case title
-        case vote = "vote_average"
-        case id
+        case tagLine = "tagline"
+        case overview
     }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: Keys.self)
         title = try container.decode(String.self, forKey: .title)
-        vote = try container.decode(Double.self, forKey: .vote)
-        id = try container.decode(Int.self, forKey: .id)
+        tagLine = try container.decode(String.self, forKey: .tagLine)
+        overview = try container.decode(String.self, forKey: .overview)
     }
 }
