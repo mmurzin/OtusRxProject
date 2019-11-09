@@ -6,11 +6,11 @@ target 'OtusRxProject' do
   use_frameworks!
 
   # Pods for OtusRxProject
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
   target 'OtusRxProjectTests' do
     inherit! :search_paths
-    pod 'RxSwift', '~> 5'
-    pod 'RxCocoa', '~> 5'
     # Pods for testing
   end
 

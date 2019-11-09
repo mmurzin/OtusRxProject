@@ -17,6 +17,10 @@
 		9772AC07236F60F8009047AD /* OtusRxProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772AC06236F60F8009047AD /* OtusRxProjectTests.swift */; };
 		9772AC12236F60F8009047AD /* OtusRxProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772AC11236F60F8009047AD /* OtusRxProjectUITests.swift */; };
 		978BAEAA2370A982005437F4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BAEA92370A982005437F4 /* SearchViewController.swift */; };
+		978BAEAC2370B184005437F4 /* TheMovieDbEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BAEAB2370B184005437F4 /* TheMovieDbEndpoint.swift */; };
+		978BAEAE2370B44C005437F4 /* TheMovieDbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BAEAD2370B44C005437F4 /* TheMovieDbService.swift */; };
+		97FBB63B2372145100EDC89B /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FBB63A2372145100EDC89B /* SearchResponse.swift */; };
+		97FBB63D237214C500EDC89B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FBB63C237214C500EDC89B /* Movie.swift */; };
 		E80CF07FC99C8F78FD0ADC59 /* Pods_OtusRxProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E16656745C7293F032C49E8 /* Pods_OtusRxProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,10 @@
 		9772AC11236F60F8009047AD /* OtusRxProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusRxProjectUITests.swift; sourceTree = "<group>"; };
 		9772AC13236F60F8009047AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978BAEA92370A982005437F4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		978BAEAB2370B184005437F4 /* TheMovieDbEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDbEndpoint.swift; sourceTree = "<group>"; };
+		978BAEAD2370B44C005437F4 /* TheMovieDbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDbService.swift; sourceTree = "<group>"; };
+		97FBB63A2372145100EDC89B /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		97FBB63C237214C500EDC89B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		A1A58DE6D6EBCBB417592641 /* Pods_OtusRxProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtusRxProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1474D70408750590313F3AE /* Pods-OtusRxProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProject.release.xcconfig"; path = "Target Support Files/Pods-OtusRxProject/Pods-OtusRxProject.release.xcconfig"; sourceTree = "<group>"; };
 		B7C3EE7E33D47A774B8CFDD0 /* Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OtusRxProject-OtusRxProjectUITests/Pods-OtusRxProject-OtusRxProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 				9772ABFA236F60F8009047AD /* LaunchScreen.storyboard */,
 				9772ABFD236F60F8009047AD /* Info.plist */,
 				978BAEA92370A982005437F4 /* SearchViewController.swift */,
+				978BAEAB2370B184005437F4 /* TheMovieDbEndpoint.swift */,
+				978BAEAD2370B44C005437F4 /* TheMovieDbService.swift */,
+				97FBB63A2372145100EDC89B /* SearchResponse.swift */,
+				97FBB63C237214C500EDC89B /* Movie.swift */,
 			);
 			path = OtusRxProject;
 			sourceTree = "<group>";
@@ -179,6 +191,7 @@
 				9772ABE8236F60F6009047AD /* Sources */,
 				9772ABE9236F60F6009047AD /* Frameworks */,
 				9772ABEA236F60F6009047AD /* Resources */,
+				752C544DFBDAF6963EC5AC1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,7 +210,6 @@
 				9772ABFE236F60F8009047AD /* Sources */,
 				9772ABFF236F60F8009047AD /* Frameworks */,
 				9772AC00236F60F8009047AD /* Resources */,
-				66A8EE555EAF03DA2036CD72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +229,7 @@
 				9772AC09236F60F8009047AD /* Sources */,
 				9772AC0A236F60F8009047AD /* Frameworks */,
 				9772AC0B236F60F8009047AD /* Resources */,
+				0B191CA632AFA151841C729E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,6 +312,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B191CA632AFA151841C729E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProject-OtusRxProjectUITests/Pods-OtusRxProject-OtusRxProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProject-OtusRxProjectUITests/Pods-OtusRxProject-OtusRxProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OtusRxProject-OtusRxProjectUITests/Pods-OtusRxProject-OtusRxProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5F779EEFC19106B9B830C350 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,21 +351,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		66A8EE555EAF03DA2036CD72 /* [CP] Embed Pods Frameworks */ = {
+		752C544DFBDAF6963EC5AC1B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProject/Pods-OtusRxProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-OtusRxProject/Pods-OtusRxProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OtusRxProjectTests/Pods-OtusRxProjectTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OtusRxProject/Pods-OtusRxProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ACAF09AF45879EA843A31FAF /* [CP] Check Pods Manifest.lock */ = {
@@ -389,9 +419,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97FBB63D237214C500EDC89B /* Movie.swift in Sources */,
 				978BAEAA2370A982005437F4 /* SearchViewController.swift in Sources */,
 				9772ABF0236F60F6009047AD /* AppDelegate.swift in Sources */,
+				97FBB63B2372145100EDC89B /* SearchResponse.swift in Sources */,
+				978BAEAC2370B184005437F4 /* TheMovieDbEndpoint.swift in Sources */,
 				9772ABF2236F60F6009047AD /* SceneDelegate.swift in Sources */,
+				978BAEAE2370B44C005437F4 /* TheMovieDbService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
