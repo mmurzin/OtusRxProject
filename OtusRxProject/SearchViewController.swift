@@ -17,6 +17,7 @@ class SearchViewController: UIViewController, UITableViewDelegate {
     let disposeBag = DisposeBag()
     
     let service = TheMovieDbService()
+    private let minSearchSize = 3
     
     var movies: [Movie] = [] {
         didSet {
@@ -29,10 +30,11 @@ class SearchViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.placeholder = "Eng: Movie name"
-        let subscription = searchBar.rx.value
+        
+        searchBar.rx.value
             .filter { q in
                 if let query = q {
-                    return query.count >= 3
+                    return query.count >= self.minSearchSize
                 } else {
                     return false
                 }
@@ -49,7 +51,18 @@ class SearchViewController: UIViewController, UITableViewDelegate {
                     }
                 }
         })
-        subscription.disposed(by: disposeBag)
+        .disposed(by: disposeBag)
+        
+        searchBar.rx.searchButtonClicked
+        .subscribe(onNext: { _ in
+            if((self.searchBar.text?.count ?? 0) < self.minSearchSize){
+                let uialert = UIAlertController(title: "Query error", message: "Search word size must be greater than 2 symbols", preferredStyle: UIAlertController.Style.alert)
+                   uialert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+                self.present(uialert, animated: true, completion: nil)
+            }
+        })
+        .disposed(by: disposeBag)
+        
         tableView.rx.itemSelected
         .subscribe(onNext:  { indexPath in
             let movie = self.movies[indexPath.row]

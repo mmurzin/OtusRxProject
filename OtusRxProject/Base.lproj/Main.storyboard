@@ -124,17 +124,24 @@
                                     </textView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-LL-0Bb">
+                                <rect key="frame" x="20" y="438" width="374" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ezi-6v-v34" firstAttribute="trailing" secondItem="Bll-sA-83Q" secondAttribute="trailingMargin" id="0Ph-fi-l27"/>
                             <constraint firstItem="Ezi-6v-v34" firstAttribute="top" secondItem="gTx-Uk-yzZ" secondAttribute="top" id="BbM-oI-HSW"/>
                             <constraint firstItem="Ezi-6v-v34" firstAttribute="bottom" secondItem="gTx-Uk-yzZ" secondAttribute="bottom" id="Dmj-0E-hDS"/>
+                            <constraint firstItem="0hS-LL-0Bb" firstAttribute="centerY" secondItem="Bll-sA-83Q" secondAttribute="centerY" id="SgG-X6-RZO"/>
+                            <constraint firstItem="0hS-LL-0Bb" firstAttribute="trailing" secondItem="Ezi-6v-v34" secondAttribute="trailing" id="Wy8-a1-xSv"/>
                             <constraint firstItem="Ezi-6v-v34" firstAttribute="leading" secondItem="Bll-sA-83Q" secondAttribute="leadingMargin" id="oCR-2Y-8Wn"/>
+                            <constraint firstItem="0hS-LL-0Bb" firstAttribute="leading" secondItem="Ezi-6v-v34" secondAttribute="leading" id="zB2-vz-AMe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gTx-Uk-yzZ"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="0hS-LL-0Bb" id="Xz3-4C-WNe"/>
                         <outlet property="descriptionTextView" destination="84B-Dh-rKG" id="xIb-MB-sRj"/>
                         <outlet property="tagLineLabel" destination="D2v-Gc-xMN" id="kkf-v7-QIb"/>
                         <outlet property="titleLabel" destination="kah-2q-Z2f" id="Svv-Hl-BlE"/>

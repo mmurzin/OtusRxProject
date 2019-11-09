@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var movieId = -1
     let service = TheMovieDbService()
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class DetailViewController: UIViewController {
             service.getMovieDetail(movieId){ info, error in
                 if let movieInfo = info {
                     DispatchQueue.main.async {
+                        self.activityIndicator.isHidden = true
                         self.titleLabel.text = movieInfo.title
                         self.tagLineLabel.text = movieInfo.tagLine
                         self.descriptionTextView.text = movieInfo.overview
