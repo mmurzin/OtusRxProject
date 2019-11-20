@@ -14,10 +14,10 @@ class SearchViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
     
-    let service = TheMovieDbService()
     private let minSearchSize = 3
+    private lazy var viewModel = SearchViewModel(networkService: ServiceLocator.shared.getService())
     
     var movies: [Movie] = [] {
         didSet {
@@ -41,14 +41,7 @@ class SearchViewController: UIViewController, UITableViewDelegate {
              }
             .subscribe(onNext: { q in
                 if let query = q {
-                    self.movies = []
-                    self.service.searchMovies(query){ items, error in
-                        if let movies = items {
-                            self.movies = movies
-                        } else {
-                            print(error)
-                        }
-                    }
+                    self.searchMovies(query)
                 }
         })
         .disposed(by: disposeBag)
@@ -77,25 +70,14 @@ class SearchViewController: UIViewController, UITableViewDelegate {
         .disposed(by: disposeBag)
     }
     
-}
-
-extension SearchViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
+    private func searchMovies(_ query: String){
+        self.movies = []
+        viewModel.searchMovies(query)
+            .subscribe(onNext: { items  in
+                self.movies = items
+            })
+            .disposed(by: disposeBag)
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: .movieCellIdentifier, for: indexPath)
-
-        let movie = movies[indexPath.row]
-        cell.textLabel?.text = movie.title
-        cell.detailTextLabel?.text = String(movie.vote)
-        return cell
-    }
-
+    
 }
 
-
-private extension String {
-    static let movieCellIdentifier = "MovieCell"
-}
