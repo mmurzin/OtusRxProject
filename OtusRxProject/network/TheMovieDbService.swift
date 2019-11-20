@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class TheMovieDbService {
+    
+    private let movieDetailSubjectData : PublishSubject<DetailMovie?> = PublishSubject()
+    
     func searchMovies(_ q: String, completion: @escaping ([Movie]?, Error?) -> ()) {
         let url = TheMovieDbEndpoint.search(q).url
         print(url)
@@ -27,21 +32,25 @@ class TheMovieDbService {
         }.resume()
     }
     
-    func getMovieDetail(_ id: Int, completion: @escaping (DetailMovie?, Error?) -> ()) {
+    func getMovieDetail(_ id: Int) -> PublishSubject<DetailMovie?> {
         let url = TheMovieDbEndpoint.detail(id).url
         print(url)
         URLSession.shared.dataTask(with: url) { data, response, error in
+            if let responseError = error{
+                self.movieDetailSubjectData.onError(responseError)
+                return
+            }
             guard let data = data else {
                 return
             }
             print(data)
             do {
                 let detailMovieResult = try JSONDecoder().decode(DetailMovie.self, from: data)
-                completion(detailMovieResult, nil)
+                self.movieDetailSubjectData.onNext(detailMovieResult)
             } catch {
-                print("error")
-                completion(nil, error)
+                self.movieDetailSubjectData.onError(error)
             }
         }.resume()
+        return movieDetailSubjectData
     }
 }
