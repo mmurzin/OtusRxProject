@@ -7,41 +7,55 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class TheMovieDbService {
-    func searchMovies(_ q: String, completion: @escaping ([Movie]?, Error?) -> ()) {
+    
+    private let movieDetailSubjectData : PublishSubject<DetailMovie?> = PublishSubject()
+    private let movieListSubjectData : PublishSubject<[Movie]?> = PublishSubject()
+    
+    func searchMovies(_ q: String) -> PublishSubject<[Movie]?>{
         let url = TheMovieDbEndpoint.search(q).url
         print(url)
         URLSession.shared.dataTask(with: url) { data, response, error in
+            if let responseError = error{
+                self.movieListSubjectData.onError(responseError)
+                return
+            }
             guard let data = data else {
                 return
             }
             print(data)
             do {
                 let searchResult = try JSONDecoder().decode(SearchResponse.self, from: data)
-                completion(searchResult.results, nil)
+                self.movieListSubjectData.onNext(searchResult.results)
             } catch {
-                print("error")
-                completion(nil, error)
+                self.movieListSubjectData.onError(error)
             }
         }.resume()
+        return movieListSubjectData
     }
     
-    func getMovieDetail(_ id: Int, completion: @escaping (DetailMovie?, Error?) -> ()) {
+    func getMovieDetail(_ id: Int) -> PublishSubject<DetailMovie?> {
         let url = TheMovieDbEndpoint.detail(id).url
         print(url)
         URLSession.shared.dataTask(with: url) { data, response, error in
+            if let responseError = error{
+                self.movieDetailSubjectData.onError(responseError)
+                return
+            }
             guard let data = data else {
                 return
             }
             print(data)
             do {
                 let detailMovieResult = try JSONDecoder().decode(DetailMovie.self, from: data)
-                completion(detailMovieResult, nil)
+                self.movieDetailSubjectData.onNext(detailMovieResult)
             } catch {
-                print("error")
-                completion(nil, error)
+                self.movieDetailSubjectData.onError(error)
             }
         }.resume()
+        return movieDetailSubjectData
     }
 }
